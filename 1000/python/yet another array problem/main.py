@@ -6,14 +6,6 @@ from math import gcd
 #     return gcd(b, a % b)
 # test
 
-"""
-Explanation
-i bruteforced this
-values for which gcd is 1 are often low so I lowered the
-upper bound of x and found that 55 works the best for all 
-the test cases
-
-"""
 t = int(input())
 
 # HIGH = 10**18
