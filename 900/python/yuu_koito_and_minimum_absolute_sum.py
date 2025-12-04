@@ -9,7 +9,6 @@ for _ in range(t):
     # print(min_val)
 
     # b = []
-    b = []
 
 
     # print("This is b", *b)
@@ -28,10 +27,11 @@ for _ in range(t):
         if a[i] == -1:
             a[i] = 0
     
-    for i in range(len(a) -1):
-        b.append(a[i + 1] - a[i])
+    # for i in range(len(a) -1):
+    #     b.append(a[i + 1] - a[i])
 
-    print(abs(sum(b)))
+# print(abs(sum(b)))
+    print(abs(a[-1] - a[0])) # telescopic sum
     print(*a)
 
 
