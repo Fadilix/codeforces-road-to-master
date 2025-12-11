@@ -32,5 +32,3 @@ for city in range(1, n + 1):
     result[ptype] = max(result[ptype], dist[city])
 
 print(*result[1:])
-
-
