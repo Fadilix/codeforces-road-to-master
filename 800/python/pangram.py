@@ -19,7 +19,7 @@ import sys
 
 sys.stdin.readline()
 
-s = sys.stdin.readlin().strip().split()
+s = sys.stdin.readlin().strip().split().lower()
 
 
 if len(set(s)) == 26:
