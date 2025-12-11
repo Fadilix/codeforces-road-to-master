@@ -1,14 +1,15 @@
 from collections import defaultdict, deque
+import sys
 
-n, m, k = map(int, input().split())
-cities = list(map(int, input().split()))
+n, m, k = map(int, sys.stdin.readline().split())
+cities = list(map(int, sys.stdin.readline().split()))
 
 graph = defaultdict(list)
 
 port = cities[0]
 
 for i in range(1, m + 1):
-    u, v = map(int, input().split())
+    u, v = map(int, sys.stdin.readline().split())
     graph[u].append(v)
     graph[v].append(u)
 
